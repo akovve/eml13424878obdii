@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02FB75A7D57BA239BBDD088B /* ELM327MonitorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C009889DA296CCC0208578 /* ELM327MonitorApp.swift */; };
+		1B188AB89497DAA1DD094E36 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F561DF8A23404A3DE669494 /* Rule.swift */; };
+		3AE220DCB69BA94A98F7EF26 /* DevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 887AA0E8CB60786C343EB905 /* DevicesView.swift */; };
+		4D9C76C6CF0AEEF969FBE230 /* PIDDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A8234CBF97996D8F886EEC /* PIDDecoder.swift */; };
+		4FF3035E5314545A62358B99 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70139D3321DFDBDF4B7786B1 /* ApiClient.swift */; };
+		568655E755925635466B10CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DF77614A107BEB8684E11B7 /* ContentView.swift */; };
+		6E94186621896FF47175AE10 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E535F8B467C293D954F9F04D /* AppStore.swift */; };
+		7C3B03D5649637D05A1B35FB /* SensorReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8736A8917C6D60A3E681E341 /* SensorReading.swift */; };
+		8729817B5870124956DED16D /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF7CD92693ED4CBFB2B0D01 /* Storage.swift */; };
+		9349120215AB7EDF88D580B9 /* BLEManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2834CBE3CE5111B39BE2F461 /* BLEManager.swift */; };
+		A9B94D57509A55886EB8933C /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D4D99A574B2B7EA6C0C4C9 /* SettingsView.swift */; };
+		AAF952CAA51B6CBCB66577B4 /* LocalNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEC44A3532ACF50BDE56FFD /* LocalNotifier.swift */; };
+		B06494E02D5C459CB7C329EB /* TelegramNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF2B16003A9E977EE063ED6 /* TelegramNotifier.swift */; };
+		CAE2442E6F1967B6BCF77D4E /* DTCDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6771B737268E0B5F51A3884E /* DTCDecoder.swift */; };
+		DAA07FB53DDF4ED4E05D86A2 /* ELM327Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2DA9D5636391E1854732A4 /* ELM327Driver.swift */; };
+		E0A65C6C4345E54800F0BEEC /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1282E1DEC2FD40AE33A93307 /* DashboardView.swift */; };
+		F81F5EFF950E37B1C364049F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176BCCF8F5E520BD3EC6D8DE /* AppDelegate.swift */; };
+		F8CDE70806C262C206C71717 /* AlertsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CE8602FE3F003E2A75B342 /* AlertsView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1282E1DEC2FD40AE33A93307 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		176BCCF8F5E520BD3EC6D8DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1DF77614A107BEB8684E11B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2834CBE3CE5111B39BE2F461 /* BLEManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEManager.swift; sourceTree = "<group>"; };
+		4CEC44A3532ACF50BDE56FFD /* LocalNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotifier.swift; sourceTree = "<group>"; };
+		6771B737268E0B5F51A3884E /* DTCDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTCDecoder.swift; sourceTree = "<group>"; };
+		6F561DF8A23404A3DE669494 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
+		70139D3321DFDBDF4B7786B1 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		81AF3E4CB323B6DBE1FCE23B /* ELM327Monitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ELM327Monitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8736A8917C6D60A3E681E341 /* SensorReading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorReading.swift; sourceTree = "<group>"; };
+		887AA0E8CB60786C343EB905 /* DevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevicesView.swift; sourceTree = "<group>"; };
+		B2A8234CBF97996D8F886EEC /* PIDDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIDDecoder.swift; sourceTree = "<group>"; };
+		C3D4D99A574B2B7EA6C0C4C9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		CFF2B16003A9E977EE063ED6 /* TelegramNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelegramNotifier.swift; sourceTree = "<group>"; };
+		DC2DA9D5636391E1854732A4 /* ELM327Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELM327Driver.swift; sourceTree = "<group>"; };
+		E399B6018A8EBC11BAC47277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E3CE8602FE3F003E2A75B342 /* AlertsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsView.swift; sourceTree = "<group>"; };
+		E535F8B467C293D954F9F04D /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		F7C009889DA296CCC0208578 /* ELM327MonitorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELM327MonitorApp.swift; sourceTree = "<group>"; };
+		FEF7CD92693ED4CBFB2B0D01 /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0F849F51FC5913D5C9C61535 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				70139D3321DFDBDF4B7786B1 /* ApiClient.swift */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		10A14B58FC7F4F78CB114317 = {
+			isa = PBXGroup;
+			children = (
+				9FCF69139F44CD89E888FDFA /* App */,
+				69FD974EC564CA244C513BFA /* Core */,
+				F6A62314D453EC2DDD832027 /* Resources */,
+				BBF5D8F247918740D8A7490F /* UI */,
+				608A0B3DDD0AA52CA3982EC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49FF8474246A39DF9070321C /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				6F561DF8A23404A3DE669494 /* Rule.swift */,
+			);
+			path = Rules;
+			sourceTree = "<group>";
+		};
+		608A0B3DDD0AA52CA3982EC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81AF3E4CB323B6DBE1FCE23B /* ELM327Monitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69FD974EC564CA244C513BFA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E535F8B467C293D954F9F04D /* AppStore.swift */,
+				C0F4CF2807BCDC41B856A8CA /* BLE */,
+				99EC881862971AF556B85665 /* Models */,
+				0F849F51FC5913D5C9C61535 /* Net */,
+				74814B127AF42AD39B06FA82 /* Notifications */,
+				6D5EADD343D56AA9EBFBA09E /* Persistence */,
+				49FF8474246A39DF9070321C /* Rules */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6D5EADD343D56AA9EBFBA09E /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				FEF7CD92693ED4CBFB2B0D01 /* Storage.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		74814B127AF42AD39B06FA82 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				4CEC44A3532ACF50BDE56FFD /* LocalNotifier.swift */,
+				CFF2B16003A9E977EE063ED6 /* TelegramNotifier.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		99EC881862971AF556B85665 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8736A8917C6D60A3E681E341 /* SensorReading.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9FCF69139F44CD89E888FDFA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				176BCCF8F5E520BD3EC6D8DE /* AppDelegate.swift */,
+				1DF77614A107BEB8684E11B7 /* ContentView.swift */,
+				F7C009889DA296CCC0208578 /* ELM327MonitorApp.swift */,
+				E399B6018A8EBC11BAC47277 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BBF5D8F247918740D8A7490F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E3CE8602FE3F003E2A75B342 /* AlertsView.swift */,
+				1282E1DEC2FD40AE33A93307 /* DashboardView.swift */,
+				887AA0E8CB60786C343EB905 /* DevicesView.swift */,
+				C3D4D99A574B2B7EA6C0C4C9 /* SettingsView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		C0F4CF2807BCDC41B856A8CA /* BLE */ = {
+			isa = PBXGroup;
+			children = (
+				2834CBE3CE5111B39BE2F461 /* BLEManager.swift */,
+				6771B737268E0B5F51A3884E /* DTCDecoder.swift */,
+				DC2DA9D5636391E1854732A4 /* ELM327Driver.swift */,
+				B2A8234CBF97996D8F886EEC /* PIDDecoder.swift */,
+			);
+			path = BLE;
+			sourceTree = "<group>";
+		};
+		F6A62314D453EC2DDD832027 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C2E9D9A4B0670D076D3A3F8 /* ELM327Monitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B52E005754F54FEA47A156 /* Build configuration list for PBXNativeTarget "ELM327Monitor" */;
+			buildPhases = (
+				3B31878853B9247E7AE64E27 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ELM327Monitor;
+			packageProductDependencies = (
+			);
+			productName = ELM327Monitor;
+			productReference = 81AF3E4CB323B6DBE1FCE23B /* ELM327Monitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4658887D92388EA326E6147F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2630;
+			};
+			buildConfigurationList = 6E22B832FF38C984709780FD /* Build configuration list for PBXProject "ELM327Monitor" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 10A14B58FC7F4F78CB114317;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 608A0B3DDD0AA52CA3982EC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C2E9D9A4B0670D076D3A3F8 /* ELM327Monitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B31878853B9247E7AE64E27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8CDE70806C262C206C71717 /* AlertsView.swift in Sources */,
+				4FF3035E5314545A62358B99 /* ApiClient.swift in Sources */,
+				F81F5EFF950E37B1C364049F /* AppDelegate.swift in Sources */,
+				6E94186621896FF47175AE10 /* AppStore.swift in Sources */,
+				9349120215AB7EDF88D580B9 /* BLEManager.swift in Sources */,
+				568655E755925635466B10CD /* ContentView.swift in Sources */,
+				CAE2442E6F1967B6BCF77D4E /* DTCDecoder.swift in Sources */,
+				E0A65C6C4345E54800F0BEEC /* DashboardView.swift in Sources */,
+				3AE220DCB69BA94A98F7EF26 /* DevicesView.swift in Sources */,
+				DAA07FB53DDF4ED4E05D86A2 /* ELM327Driver.swift in Sources */,
+				02FB75A7D57BA239BBDD088B /* ELM327MonitorApp.swift in Sources */,
+				AAF952CAA51B6CBCB66577B4 /* LocalNotifier.swift in Sources */,
+				4D9C76C6CF0AEEF969FBE230 /* PIDDecoder.swift in Sources */,
+				1B188AB89497DAA1DD094E36 /* Rule.swift in Sources */,
+				7C3B03D5649637D05A1B35FB /* SensorReading.swift in Sources */,
+				A9B94D57509A55886EB8933C /* SettingsView.swift in Sources */,
+				8729817B5870124956DED16D /* Storage.swift in Sources */,
+				B06494E02D5C459CB7C329EB /* TelegramNotifier.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		04899DB579CF810E023F3E44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PV44V7Z56X;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elm327monitor.ELM327Monitor;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AF926F117DF8793783AEFCBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PV44V7Z56X;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elm327monitor.ELM327Monitor;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C67FCE9004179868BA04A979 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = PV44V7Z56X;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E2D348447DEF8F631CBA09AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = PV44V7Z56X;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B52E005754F54FEA47A156 /* Build configuration list for PBXNativeTarget "ELM327Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF926F117DF8793783AEFCBD /* Debug */,
+				04899DB579CF810E023F3E44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6E22B832FF38C984709780FD /* Build configuration list for PBXProject "ELM327Monitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2D348447DEF8F631CBA09AD /* Debug */,
+				C67FCE9004179868BA04A979 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4658887D92388EA326E6147F /* Project object */;
+}

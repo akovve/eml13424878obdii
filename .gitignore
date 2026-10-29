@@ -1,0 +1,31 @@
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+
+# Swift and macOS
+.swiftpm/
+.DS_Store
+
+# Node.js
+server/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+serviceAccount*.json
+*service-account*.json
+*.p8
+*.p12
+*.mobileprovision
+*.cer
+*.key
+
+# Personal Copilot/agent configuration
+.github/agents/
